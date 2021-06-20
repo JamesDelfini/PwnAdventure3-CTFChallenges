@@ -74,3 +74,17 @@ What to do?
 - Patch binary/Hook libraries
 - Edit rendering engine
 - Build bots (automate task to be faster and more accurate)
+
+## Others
+### PSQL Database
+- Restart the server
+> sudo service postgresql restart
+
+- Change a user password
+> sudo su postgres
+> psql template1
+> ALTER USER postgres with password 'your-pass';
+
+### Script
+- Run SQL Script
+psql -U komma -d master -f ~/PwnAdventure3/servers/MasterServer/initdb.sql
